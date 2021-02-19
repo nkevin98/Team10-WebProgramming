@@ -1,0 +1,72 @@
+.passageStops{
+	background-color: black;
+	mix-blend-mode: overlay;
+	width: 33.3%;
+	top: calc(1em + 3px);
+}
+#passage, .passageStops{ 
+	height: 10px; 
+}
+#passageWrapper, .passageStops {
+	position: sticky; 
+	position: -webkit-sticky; 
+	z-index: 1; 
+}
+#passage{ background: violet; margin: 0 0 20px 0; filter: contrast(120%); }
+#passageWrapper{
+	background-color: white;
+	height: 40px;
+	top: 0px;
+}
+.passageStops:nth-child(4){ margin-left: 33.3%; }
+.passageStops:nth-child(6){ margin-left: 66.6%; }
+
+
+.sections{
+	height: 400px; margin-bottom: 20px;
+	text-align: center;
+}
+main{
+	width: 400px; margin: auto; margin-top: 40px; padding: 20px;
+	background-color: blue; border-radius: 4px;
+}
+img{ height: inherit; object-fit: cover; filter: hue-rotate(260deg) brightness(130%); }
+p{ text-align: right; }
+h1{
+	width: max-content; margin: auto;  
+	font-size: 20pt; color: white; text-align: center; text-shadow: 4px 4px 1px black;
+}
+h1::before{
+	width: 80%; height: .2em; display: block; content: ''; 
+	position: relative; left: 30%; bottom: -1.2em;
+	z-index: -1;  
+	background-color: lime;
+	transform: skewX(-30deg);
+}
+	.captions{
+	display: block; margin-top: -1em;
+	color: white; font-size: 16pt; font-weight: bolder; text-transform: uppercase;
+}
+body{
+	padding-bottom: 400px;
+	font-family: 'Bellefair', serif;
+	background: black;
+}
+@media(min-width: 1800px){
+	.sections{ height: 600px; }
+	h1{ font-size: 26pt; }
+	main{ width: 600px; }
+	body{margin-bottom: 600px; font-size: 20pt; }
+}
+
+@media(max-width: 360px){main{ width: 90vw; padding: 5px; } }
+
+/*fallback*/
+img:empty{ width: 100%; background-image: repeating-linear-gradient(45deg, darkgrey 4px, grey 4px, grey 8px, darkgrey 8px, darkgrey 12px)  }
+img:empty + span{ display: none; }
+@supports not((position:sticky) or (position:-webkit-sticky)){
+	body *:not(main){display: none;} 
+	body{background: initial;}
+	main::after{display: block; content:'THIS DEMO IS NOT SHOWN BECAUSE POSTION:STICKY IS NOT SUPPORTED IN YOUR BROWSER';  background-color: lightgrey; margin:auto; padding: 16px; }
+	main::before{display: block; content:'🍿'}
+}

@@ -1,5 +1,6 @@
 body {
 	font-family: arial;
+	margin: 0;
 }
 div#content {
 	margin: auto;
@@ -15,6 +16,33 @@ h1 {
 img {
 	margin: auto;
 	display: block;
+	width: inherit;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background: url("iu.jpeg");
+  background-size: cover;
+  margin: 0px;
+  text-align: center;
+  color: white;
+  font-size: 20pt;
+}
+div#banner {
+	background-color: rgb(128,128,128,0.4);
+	width: inherit;
+	height: inherit;
+	margin: auto;
+	display: block;
+	transform: translateY(0%);
+	transition: background-color 0.5s;
+}
+#banner:hover {
+	transition: 0.5s;
+	background-color: rgb(128,128,128,0.8); 
+}
+div span {
+	vertical-align: -100%;
 }
 .sub {
 	text-indent: 20px;
@@ -31,7 +59,6 @@ img {
   -ms-user-select: none;
   user-select: none;
 }
-
 /* Hide the browser's default checkbox */
 .container input {
   position: absolute;
@@ -40,7 +67,6 @@ img {
   height: 0;
   width: 0;
 }
-
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
@@ -51,29 +77,24 @@ img {
   background-color: white;
   border: 1px solid black;
 }
-
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc;
 }
-
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #2196F3;
 }
-
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
-
 /* Style the checkmark/indicator */
 .container .checkmark:after {
   left: 9px;
@@ -103,14 +124,12 @@ img {
   bottom: 5%;
   opacity: 0.6;
 }
-
 .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -122,11 +141,9 @@ img {
 .button:hover {
 	opacity: 1;
 }
-
 .button:hover span {
   padding-right: 25px;
 }
-
 .button:hover span:after {
   opacity: 1;
   right: 0;
@@ -157,10 +174,6 @@ li {
 	animation-duration: 2s;
 }
 @keyframes fade {
-	0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {opacity: 0;}
+  100% {opacity: 1;}
 }
