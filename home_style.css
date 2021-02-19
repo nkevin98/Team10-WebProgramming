@@ -1,0 +1,47 @@
+body {
+	text-align: center;
+	background-color: #ccf2f4;
+}
+main {
+	width: 80%;
+	background-color: #f4f9f9;
+	padding: 5%;
+	padding-top: 5px;
+	margin: auto;
+	margin-top: 3%;
+}
+div#container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: auto;
+	
+}
+.recipe {
+	text-align: center;
+	width: 500px;
+	height: 360px;
+	overflow: hidden;
+	transition: height 1s;
+}
+.recipe:hover {
+	height: 420px;
+}
+img {
+	width: 500px;
+	height: 300px;
+	object-fit: scale-down;
+}
+.button {
+	background-color: lightgreen;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: auto;
+	cursor: pointer;
+	width: 35%;
+	float: left;
+}
