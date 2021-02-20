@@ -1,0 +1,9 @@
+body {
+}
+div {
+	background-color: grey;
+	margin: auto;
+	display: block;
+	width: 1000px;
+	height: inherit;
+}
