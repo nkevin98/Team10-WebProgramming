@@ -1,0 +1,190 @@
+body {
+	font-family: arial;
+	margin: 0;
+}
+div#content {
+	margin: auto;
+	width: 50%;
+	background-color: #a4ebf3;
+	padding-left: 20px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+}
+h1 {
+	text-align: center;
+}
+img {
+	margin: auto;
+	display: block;
+	width: inherit;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background: url("iu.jpeg");
+  background-size: cover;
+  margin: 0px;
+  text-align: center;
+  color: white;
+  font-size: 20pt;
+}
+div#banner {
+	background-color: rgb(128,128,128,0.4);
+	width: inherit;
+	height: inherit;
+	margin: auto;
+	display: block;
+	transform: translateY(0%);
+	transition: background-color 0.5s;
+}
+#banner:hover {
+	transition: 0.5s;
+	background-color: rgb(128,128,128,0.8); 
+}
+div span {
+	vertical-align: -100%;
+}
+.Hbutton{
+  cursor: pointer;
+  border: none;
+  position: relative;
+  float: left;
+  transition: all 1s;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e40754;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  margin-left: 2%;
+  margin-top:0.5%;
+  color: white;
+  opacity: 0.75;
+  transition: box-shadow 0.3s;
+  transition: transform 0.5s;
+}
+.Hbutton:hover {
+     opacity: 1;
+     box-shadow: 0px 5px 10px black;
+     transform: translateY(-10px);
+}
+.sub {
+	text-indent: 20px;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border: 1px solid black;
+}
+.container:hover input ~ .checkmark {
+  background-color: lightgrey;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.button {
+  border-radius: 4px;
+  background-color: #aaaaaa;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 1s;
+  cursor: pointer;
+  position: fixed;
+  margin: 5px;
+  margin-left: 80%;
+  bottom: 5%;
+  opacity: 0.6;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover {
+	opacity: 1;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+aside#Table {
+  width: 250px;
+  position: fixed;
+  left: 5%;
+  top: 30%;
+  display: block;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #f4f9f9;
+  animation-name: table;
+  animation-duration: 2s;
+}
+@keyframes table {
+	0% {left: -20%;top: 30%;}
+	100% {left: 5%;top: 30%;}
+}
+li {
+	font-size: 18px;
+	margin-right: 5px;
+}
+#fade {
+	animation-name: fade;
+	animation-duration: 2s;
+}
+@keyframes fade {
+	0% {opacity: 0;}
+  100% {opacity: 1;}
+}

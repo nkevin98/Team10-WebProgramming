@@ -1,0 +1,154 @@
+body {
+  font-family: arial;
+  padding:0;
+  margin:0;
+  color: black;
+  background-image: url('giphy3.gif');
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  color: #e40754;
+}
+.meal {
+  font-weight: bold;
+  font-family:;
+}
+
+header {
+ width: 100%;
+  height: 100px;
+  background: url("iu.jpeg");
+  background-size: cover;
+  margin: 0px;
+  text-align: center;
+  color: white;
+  font-size: 20pt;
+}
+div#banner {
+  display: flex;
+  background-color: rgb(128,128,128,0.4);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  display: inline-block;
+  transform: translateY(0%);
+  transition: background-color 0.5s;
+}
+#banner:hover {
+  transition: 0.5s;
+  background-color: rgb(128,128,128,0.8); 
+}
+div span {
+  vertical-align: -100%;
+}
+.Hbutton{
+  cursor: pointer;
+  border: none;
+  position: relative;
+  transition: all 1s;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e40754;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  margin-left: 2%;
+  margin-top:0.5%;
+  color: white;
+  opacity: 0.75;
+  transition: box-shadow 0.3s;
+  transition: transform 0.5s;
+}
+.Hbutton:hover {
+     opacity: 1;
+     box-shadow: 0px 5px 10px black;
+     transform: translateY(-10px);
+}
+.header {
+  width: 100%;
+  height: 100px;
+  background: url("iu.jpeg");
+  background-size: cover;
+}
+
+div#content {
+display: flex;
+  margin: auto;
+  width: 800px;
+  height: 1100px;
+  background-color: #a4ebf3;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-right: 40px;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #aaaaaa;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 1s;
+  cursor: pointer;
+  position: fixed;
+  margin: 5px;
+  margin-left: 83%;
+  bottom: 5%;
+  opacity: 0.6;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover {
+  opacity: 1;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.checked {
+  color: orange;
+}
+
+.column {
+    width: 250px;
+    float: left;
+    margin-left: 2%;
+}
+.review {
+  position: relative;
+  color: white;
+  font-size: 10pt;
+  font-weight: bold;
+  background-color: #5696f0;
+  border: 2px solid;
+  border-color: #e40754;
+  padding: 8px;
+  border-radius: 5px;
+}
