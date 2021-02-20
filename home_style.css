@@ -20,7 +20,6 @@ div#banner {
 	height: inherit;
 	margin: auto;
 	display: block;
-	transform: translateY(0%);
 	transition: background-color 0.5s;
 }
 #banner:hover {

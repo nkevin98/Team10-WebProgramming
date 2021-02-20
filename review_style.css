@@ -33,7 +33,6 @@ div#banner {
   overflow: hidden;
   margin: auto;
   display: inline-block;
-  transform: translateY(0%);
   transition: background-color 0.5s;
 }
 #banner:hover {
@@ -84,52 +83,6 @@ display: flex;
   padding-right: 40px;
   border-radius: 10px;
   padding-top: 20px;
-}
-
-.button {
-  border-radius: 4px;
-  background-color: #aaaaaa;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 1s;
-  cursor: pointer;
-  position: fixed;
-  margin: 5px;
-  margin-left: 83%;
-  bottom: 5%;
-  opacity: 0.6;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.button:hover {
-  opacity: 1;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 .checked {
