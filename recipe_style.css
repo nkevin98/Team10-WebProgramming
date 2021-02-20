@@ -44,6 +44,30 @@ div#banner {
 div span {
 	vertical-align: -100%;
 }
+.Hbutton{
+  cursor: pointer;
+  border: none;
+  position: relative;
+  float: left;
+  transition: all 1s;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #e40754;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  margin-left: 2%;
+  margin-top:0.5%;
+  color: white;
+  opacity: 0.75;
+  transition: box-shadow 0.3s;
+  transition: transform 0.5s;
+}
+.Hbutton:hover {
+     opacity: 1;
+     box-shadow: 0px 5px 10px black;
+     transform: translateY(-10px);
+}
 .sub {
 	text-indent: 20px;
 }
@@ -135,11 +159,11 @@ div span {
   opacity: 1;
   right: 0;
 }
-aside {
+aside#Table {
   width: 250px;
   position: fixed;
   left: 5%;
-  top: 20%;
+  top: 30%;
   display: block;
   border: 1px solid black;
   border-radius: 10px;
@@ -149,8 +173,8 @@ aside {
   animation-duration: 2s;
 }
 @keyframes table {
-	0% {left: -20%;top: 20%;}
-	100% {left: 5%;top: 20%;}
+	0% {left: -20%;top: 30%;}
+	100% {left: 5%;top: 30%;}
 }
 li {
 	font-size: 18px;
