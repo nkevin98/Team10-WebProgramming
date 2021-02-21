@@ -1,9 +1,41 @@
 body {
+	background-image: url('thai-food.jpg');
+	background-position: cover;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	color: white;
 }
+
 div {
-	background-color: grey;
+	background: black;
+	opacity: 80%;
+	width: 60%;
 	margin: auto;
-	display: block;
-	width: 1000px;
-	height: inherit;
+	padding: 50px;
+}
+#project {
+	text-align: center;
+	font-size: 50pt;
+	color: red;
+	font-family: copperplate;
+}
+#hint {
+	text-align: center;
+	font-style: italic;
+	font-size: 15pt;
+}
+.label {
+	text-align: center;
+	font-size: 40pt;
+	font-family: Brush Script MT;
+}
+.s_label {
+	text-align: center;
+	font-size: 15pt;
+}
+.i {
+	font-style: italic;
+}
+.bold {
+	font-weight: bold;
 }
